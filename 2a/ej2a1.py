@@ -64,28 +64,26 @@ def sum_even_numbers_in_list_while(list_numbers):
 
 def sum_even_numbers_in_list_for(list_numbers):
     # Write here your codeç
-    shopping_list = [10, 449, 33, 44, 188, 64]
     sum_pares = 0 
-    for numero in shopping_list:
+    for numero in list_numbers:
         if numero % 2 == 0:
             sum_pares += numero
-    print(f"La suma de los números pares es: {sum_pares}")
+    return sum_pares
 
 
 def sum_even_numbers_in_list_do_while(list_numbers):
     # Write here your code
-    shopping_list = [10, 449, 33, 44, 188, 64]
     sum_pares = 0
     indice = 0
 
     while True:
-        numero = shopping_list[indice]
+        numero = list_numbers[indice]
         if numero % 2 == 0:
             sum_pares += numero
         indice +=1
         if indice >= len(shopping_list):
             break
-    print(f"la suma de los números pares es:{sum_pares}")
+    return sum_pares
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
