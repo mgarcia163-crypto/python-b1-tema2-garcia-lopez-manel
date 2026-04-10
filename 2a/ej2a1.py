@@ -60,7 +60,7 @@ def sum_even_numbers_in_list_while(list_numbers):
         if numero % 2 == 0:
             sum_pares += numero
         indice += 1 
-    print(f"la suma de los números pares es: {sum_pares}")
+    return sum_pares
 
 
 def sum_even_numbers_in_list_for(list_numbers):
