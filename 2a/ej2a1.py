@@ -52,11 +52,10 @@ Exemple:
 
 def sum_even_numbers_in_list_while(list_numbers):
     # Write here your code
-    shopping_list = [10, 449, 33, 44, 188, 64]
     sum_pares = 0
     indice = 0 
-    while indice < len(shopping_list):
-        numero = shopping_list[indice]
+    while indice < len(list_numbers):
+        numero = list_numbers[indice]
         if numero % 2 == 0:
             sum_pares += numero
         indice += 1 
