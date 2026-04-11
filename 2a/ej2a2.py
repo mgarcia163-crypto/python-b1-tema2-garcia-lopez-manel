@@ -67,12 +67,17 @@ Sortida:
 
 def tax_calculation_group_1(value: int):
     # Write here your code
-    pass
+    porcentaje_1 = 0.19
+    resultado = value * porcentaje_1
+    return float(resultado)
 
 
 def tax_calculation_global(value: int):
     # Write here your code
-    pass
+    porcentaje = 0.24
+    resultado = value * porcentaje
+    return float(resultado)
+
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
