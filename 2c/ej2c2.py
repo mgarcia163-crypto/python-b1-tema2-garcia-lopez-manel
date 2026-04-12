@@ -22,7 +22,7 @@ Ejemplo:
     
     Salida:
     - En el primer caso el resultado es: "Notebook"
-    - En el segundo caso el resultado es: "The specified index is out of the items_list's range"
+    - En el segundo caso el resultado es: "The specified index is out of the list's range"
     - En caso de un error inesperado, ha de retornar: "An unexpected error has occurred: {error}"
     
 
@@ -59,7 +59,7 @@ def get_element_from_list(items_list, index) -> str:
     try:
         return items_list[index]
     except IndexError:
-        return "The specified index is out of the list's range"
+        return "The specified index is out of list's range"
     except Exception as e:
         return f"An unexpected error has occurred: {e}"
 
