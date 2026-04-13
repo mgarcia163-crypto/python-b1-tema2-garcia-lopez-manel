@@ -48,12 +48,12 @@ Exemple:
 """
 
 
-def kg_to_lb(kg: int):
+def kg_to_lb(kg):
     if not isinstance(kg, (int, float)):
-        raise TypeError ("Introduce un valor numérico")
+        raise TypeError("Introduce un valor numérico")
     if kg <= 0:
-        raise ValueError ("Introduce un número superior a 0")
-    return kg * 2.20462
+        raise ValueError("Introduce un número superior a 0")
+    return round(kg * 2.20462,2)
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
