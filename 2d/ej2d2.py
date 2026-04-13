@@ -67,8 +67,25 @@ Exemple:
 
 
 def calculate_max_and_min(list_numbers):
-    # Write here your code
-    pass
+    if len(list_numbers) == 0:
+        raise ValueError("Lista vacía")
+    for num in list_numbers:
+        if not isinstance(num, (int, float)):
+            raise TypeError("introducir sólo números")
+    
+    min_val = list_numbers[0]
+    max_val = list_numbers[0]
+    print(f"Greater: {max_val} Lesser: {min_val}")
+
+    for num in list_numbers [1:]:
+        new_min = min(min_val, num)
+        new_max = max(max_val, num)
+
+        if new_min != min_val or new_max != max_val:
+            min_val = new_min
+            max_val = new_max
+            print(f"Greater: {max_val} Lesser: {min_val}")
+    return min_val, max_val
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
