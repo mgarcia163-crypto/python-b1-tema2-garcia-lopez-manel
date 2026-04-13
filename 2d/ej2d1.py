@@ -48,9 +48,12 @@ Exemple:
 """
 
 
-def kg_to_lb(kg):
-    # Write here your code
-    pass
+def kg_to_lb(kg: int):
+    if not isinstance(kg, (int, float)):
+        raise TypeError ("Introduce un valor numérico")
+    if kg <= 0:
+        raise ValueError ("Introduce un número superior a 0")
+    return kg * 2.20462
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
